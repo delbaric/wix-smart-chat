@@ -1,0 +1,6 @@
+import { publish } from 'wix-realtime-backend';
+
+export function publishOnChannel(name) {
+	const channel = {name};
+    return publish(channel);
+}
